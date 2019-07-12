@@ -24,5 +24,10 @@ namespace BookInventory.View
         {
             InitializeComponent();
         }
+
+        private void BookGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

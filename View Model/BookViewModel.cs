@@ -44,5 +44,17 @@ namespace BookInventory.View_Model
                 }
             }
         }
+
+        public void UpdateBook(string title, string author, string newTitle, string newAuthor)
+        {
+            foreach (Book book in Books)
+            {
+                if (book.Title == title && book.Author == author) 
+                {
+                    book.Title = newTitle;
+                    book.Author = newAuthor;
+                }
+            }
+        }
     }
 }

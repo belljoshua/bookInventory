@@ -12,6 +12,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <ListView Name="BookGrid" Grid.Row="0" ItemsSource="{Binding Books}"  >
             <ListView.View>
@@ -23,34 +24,9 @@
             </ListView.View>
         </ListView>
 
-        <Button Margin="614,374,98,27.8" >Delete</Button>
+        <!-- <TextBox  Name="Filter" Height="30" Width="200" Margin="570,366,30,29.6" Grid.Row="1"/> -->
+
+        <!-- <Button Margin="614,374,98,27.8" >Delete</Button> -->
     </Grid>
     
-    <!--
-    <Grid>
-        <StackPanel HorizontalAlignment = "Left">
-
-            <ItemsControl ItemsSource = "{Binding Path = Books}">
-
-                <ItemsControl.ItemTemplate>
-                    <DataTemplate>
-                        <StackPanel Orientation = "Horizontal">
-                            <TextBlock Text = "{Binding Path = Title, Mode = OneWay}" 
-                        Width = "100" Margin = "3 5 3 5"/>
-
-                            <TextBlock Text = "{Binding Path = Author, Mode = OneWay}" 
-                        Width = "100" Margin = "0 5 3 5"/>
-
-                            <TextBlock Text = "{Binding Path = Stock, Mode = OneWay}" 
-                        Margin = "0 5 3 5"/>
-
-                        </StackPanel>
-                    </DataTemplate>
-                </ItemsControl.ItemTemplate>
-
-            </ItemsControl>
-
-        </StackPanel>
-    </Grid>
-    -->
 </UserControl>
